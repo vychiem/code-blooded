@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthy Blooded</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=spa" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+  
+    <div id="topbar">
+        <span id="icon" class="material-symbols-outlined">spa</span>
+        <h1 id="name">healthy blooded</h1>
+    </div>
+
+    <nav>
+      <a class="tab" href="index.html">Home</a>
+      <a class="tab" href="#meal-form">Find a Meal</a>
+    </nav>
+    
+    <div>
+        <h1 id="welcome" class="slide-text">Welcome to healthy blooded!</h1>
+    </div>
+  
+    
+   <section class="hero">
+
+      <h1 id="question">
+      <br>
+      <br>
+        What food do you have?
+      </h1>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+    </section>
+  
+    <div class="layout">
+      <form id="meal-form" class="panel">
+        <h2>What do you have?</h2>
+
+        <label for="ingredients">Your ingredients</label>
+
+        <textarea
+          id="ingredients"
+          rows="5"
+          maxlength="2000"
+          placeholder="e.g. lentils, spinach, tomatoes, rice"
+          aria-describedby="ingredient-help"
+          required
+        ></textarea>
+
+        <p id="ingredient-help" class="hint">
+          Separate foods with commas (,).
+        </p>
+
+        <ul
+          id="ingredient-list"
+          class="chips"
+          aria-label="Your ingredient list"
+        ></ul>
+
+        <button id="generate-button" class="primary-button" type="submit">
+          <span id="button-label">Start cooking!</span>
+          <span aria-hidden="true">↗</span>
+        </button>
+
+        <div class="period-section">
+          <label class="toggle" for="period-toggle">
+            <input
+              type="checkbox"
+              id="period-toggle"
+              aria-describedby="period-help"
+            >
+
+            <span>I’m on my period 🌸</span>
+            <span class="optional">optional</span>
+          </label>
+
+          
+        </div>
+
+        <p id="mode-label" class="mode" role="status">
+          Checking connection…
+        </p>
+
+        <p id="privacy-note" class="hint"></p>
+
+        <p
+          id="status"
+          class="status"
+          role="status"
+          aria-live="polite"
+          aria-atomic="true"
+        ></p>
+      </form>
+
+      <section aria-labelledby="result-heading">
+        <div class="result-heading">
+          <h2 id="result-heading">Your Meal</h2>
+        </div>
+
+        <div id="result">
+          <div class="empty-state">
+            <span class="empty-symbol" aria-hidden="true">✳</span>
+            <h3>A good idea starts here.</h3>
+            <p>Add what you have and get seven meal ideas.</p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+</body>
+</html>
+   
